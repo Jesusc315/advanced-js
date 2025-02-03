@@ -31,9 +31,14 @@ var salaryMonthQr=quinnRicardo * 4;
 console.log(salaryMonthQr/shoes);
 //roughly 7 shoes but rounded up is 8
 // 5. How many more games can they buy if they put their money together compared to if they had bought games on their own?
-
+var gamesT=quinnRicardo/game;
+console.log(gamesT);
+var gamesAlone=even3/game;
+console.log(gamesAlone);
+console.log(gamesT-gamesAlone+" more games");
+//Rounded up should be around 3 more game
 // 6. Print out the three siblings' names. "The three siblings are __, __, and ___."
-
+console.log("The three siblings are " + sibling1 + "," + sibling2 + "," + sibling3 + ".")
 // 7. Use console.log() and a built-in method to count how many characters are in Ricardo's name.
 
 // 8. Use console.log() and a built-in method to print out the string "RICARDO MONTOYA DE LA ROSA RAMIREZ"
