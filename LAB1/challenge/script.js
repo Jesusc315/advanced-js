@@ -16,13 +16,20 @@ let shoes = 89.78;
 
 
 // 1. If divided evenly, how much would each sibling get for the week?
-
+let even3= weeklyAllowance/3;
+console.log(even3);
+//should come out to be $43
 // 2. How many games can Jordan buy with their cut?
-
+console.log(even3/game);
+//only 2 games unless rounded up to 3
 // 3. The cost of games just went up by a dollar and shoes are on sale at 50% (half) off. Change the variables to their new prices.
-
+game=16.99;
+shoes=89.78/2;
 // 4. Quinn and Ricardo are twins. If they put their money together, how many on sale shoes can they buy in a month (4 weeks)?
-
+var quinnRicardo=even3*2;
+var salaryMonthQr=quinnRicardo * 4;
+console.log(salaryMonthQr/shoes);
+//roughly 7 shoes but rounded up is 8
 // 5. How many more games can they buy if they put their money together compared to if they had bought games on their own?
 
 // 6. Print out the three siblings' names. "The three siblings are __, __, and ___."
