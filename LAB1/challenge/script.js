@@ -107,42 +107,49 @@ console.log(perfectRoot(5));
 /// a. Adds 2 numbers and returns the sum
 let addNums = (x, y) => {
     let sum = x + y;
-    console.log(sum);
+    console.log("The sum of " + x ,"+ " + y ,"= " + sum);
 }
 // uncomment the line below, to call the function, and add one more function call
  console.log( addNums(4, 6) );
-
+console.log( addNums(3,5));
 
 /// b. Prints a special message if name is "Beyonce"
 const isBeyonce = (name) => {
-    // if( ) { 
-    //     return "Welcome Queen!";
-    // } else {
-    //     return `Sorry {name}, you're not Beyonce`;
-    // }
+     if(name == "Beyonce") { 
+        return "Welcome Queen!";
+    } else {
+        return `Sorry ${name}, you're not Beyonce`;
+     }
 }
 // Test "Beyonce" and other names to ensure it works
-
+console.log (isBeyonce("Jesus"));
+console.log (isBeyonce("Beyonce"));
 
 
 /// c. If the number is even, return the number divided by 2, otherwise, return the number
 /// For example reduceEvens(10) => 5 -- reduceEvens(11) => 11
 const reduceEvens = (x) => {
-    // if( ){
-
-    // } else {
-    //     return x;
-    // }
+     if(x%2 === 0) {
+        console.log(x/2);
+     } else {
+         return x;
+     }
 }
 //Write your own function calls
-
+console.log(reduceEvens(10));
+console.log(reduceEvens(11));
 
 // 14. Write a function called shortenString(string) that returns the first 10 characters of a string if it is longer than 10
 //remove all
 const shortenString = (string) => {
-
+if (string.length > 10) {
+    return string.substring(0, 10);
+  }
+  return string;
 }
 
+console.log(shortenString("Jesus"));
+console.log(shortenString("JesusJesus"))
 
 
 // Spicy Challenges
