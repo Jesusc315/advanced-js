@@ -1,4 +1,7 @@
 
+//JESUS CASTILLO
+
+
 // Mild Challenges 
 /// The three siblings get their allowance once a week.
 /// Their current obsession is buying unique card games and collecting shoes.
@@ -57,32 +60,57 @@ console.log(deLaRosa);
 // 12. Rewrite these function as an arrow function.
 /// Then, call them with different inputs to check the result.
 
-function getRandomNum() {
+//function getRandomNum() {
+ //   return Math.floor(Math.random() * 100);
+//}
+
+getRandomNum = () => {
     return Math.floor(Math.random() * 100);
 }
 
-function greeting(name) {
+console.log(getRandomNum(5));
+
+//function greeting(name) {
+    //return `Hello ${name}, I'm glad you can make it!`;
+//}
+
+greeting = (name) => {
     return `Hello ${name}, I'm glad you can make it!`;
 }
 
-function perfectRoot(x) {
+console.log(greeting("Jesus"));
+
+//function perfectRoot(x) {
+//   let root = Math.sqrt(x);
+//    if (Math.floor(root) === root) {
+//        return root;
+//    } else {
+//        return "No perfect root"
+ //   }
+//}
+
+perfectRoot= (x) => {
     let root = Math.sqrt(x);
-    if (Math.floor(root) === root) {
+    if(Math.floor(root) === root){
         return root;
     } else {
         return "No perfect root"
     }
 }
 
+console.log(perfectRoot (4));
+console.log(perfectRoot(5));
+
 // 13. Fix/Finish the following functions.
 /// Then, call them with at least 2 different inputs to ensure they work.
 
 /// a. Adds 2 numbers and returns the sum
-const addNums = (x, y) => {
+let addNums = (x, y) => {
     let sum = x + y;
+    console.log(sum);
 }
 // uncomment the line below, to call the function, and add one more function call
-// console.log( addNums(4, 6) );
+ console.log( addNums(4, 6) );
 
 
 /// b. Prints a special message if name is "Beyonce"
