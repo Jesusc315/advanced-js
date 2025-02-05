@@ -198,11 +198,39 @@ console.log(buyMeals(29));
 
 // 17. [Challenge] Write a function missingLeg(side1, side2) that takes in the length of a hypotenuse and a leg of a right triangle and prints out the missing leg's length
 // Prompt the user for the two sides and call the function
-/// The larger side should be the hypotenuse  
-
-
+/// The larger side should be the hypotenuse
+let lengthH=prompt("What is the length of the hypotenuse? ");
+let legRt=prompt("What is the length of the leg of the right traingle? ");
+const missingLeg = (lengthH, legRt) => {
+    if(lengthH < legRt){
+        console.log("Length of the hypotenuse must be largest length in the traingle");
+    } else {
+        let equationMathH =  lengthH *2;
+        let equationMathRt= legRt * 2;
+        let baseOfMS=equationMathH - equationMathRt;
+        let missingSideLength=Math.sqrt(baseOfMS);
+        console.log(missingSideLength + " is the length of the missing side. ");
+    }
+}
+console.log(missingLeg(10, 5));
+console.log(missingLeg(5, 10));
 
 // 18. [Super Challenge] In math, Factorial is the product of an integer and all the integers below it.
 /// For example: factorial(3) = 3*2*1 = 6 ---  factorial(5) = 5*4*3*2*1 = 120
 /// Write a function factorial(x) that finds the factorial of any integer.
 // Prompt the user for a number and call the function
+let numForFactorial=prompt("Type in a number for a factorial");
+const factorialCalculations = (numForFactorial) => {
+    if(numForFactorial == 1){
+        console.log("number typed must be bigger than one becuase factorial of one is one.");
+    } else {
+    let base= 1;
+    for (let i = 1; i <= numForFactorial; i++) {
+        base *= i;
+    }
+    return base;
+    }
+}
+console.log(factorialCalculations(1));
+console.log(factorialCalculations(5));
+console.log(factorialCalculations(10));
