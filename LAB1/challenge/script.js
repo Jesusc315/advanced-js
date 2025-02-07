@@ -7,6 +7,7 @@
 /// Their current obsession is buying unique card games and collecting shoes.
 /// Below is the total money they split weekly, their names, and the price of
 ///     a card game and a pair of shoes.
+const prompt = require("prompt-sync")();
 
 let weeklyAllowance = 129;
 let sibling1 = "Jordan";
@@ -36,7 +37,7 @@ console.log(salaryMonthQr/shoes);
 // 5. How many more games can they buy if they put their money together compared to if they had bought games on their own?
 var gamesT=quinnRicardo/game;
 console.log(gamesT);
-var gamesAlone=even3/game;
+var gamesAlone=Math.floor(even3/game);
 console.log(gamesAlone);
 console.log(gamesT-gamesAlone+" more games");
 //Rounded up should be around 3 more game
